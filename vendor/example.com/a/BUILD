@@ -8,5 +8,5 @@ go_prefix("example.com/a")
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    deps = ["//b:go_default_library"],
+    deps = ["//vendor/example.com/a/b:go_default_library"],
 )
