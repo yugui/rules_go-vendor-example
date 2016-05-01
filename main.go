@@ -1,14 +1,9 @@
 package main
 
 import (
-	"flag"
-
-	"github.com/golang/glog"
+	"example.com/a"
 )
 
 func main() {
-	flag.Parse()
-	defer glog.Flush()
-
-	glog.Infof("OK")
+	a.Hello()
 }
